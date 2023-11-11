@@ -11,12 +11,12 @@ git clone git@github.com:maxday/duke-rust-workshop.git && cd duke-rust-workshop
 
 # Create your first Lambda Function
 ```bash
-cargo lambda new --template https://github.com/maxday/rust-workshop --no-interactive hello-maxday
+cargo lambda new --template https://github.com/maxday/rust-workshop --no-interactive hello-${SUFFIX}
 ```
 
 # Enter your hello function directory
 ```bash
-cd hello-maxday
+cd hello-${SUFFIX}
 ```
 
 # Build!
@@ -31,7 +31,7 @@ cargo lambda deploy --iam-role $DEPLOY_ROLE_ARN
 
 # Invoke your function using the aws-cli!
 ```bash
-cargo lambda invoke --remote hello-maxday --data-ascii '{ "message": "Hello from workshop!" }'
+cargo lambda invoke --remote hello-${SUFFIX} --data-ascii '{ "message": "Hello from workshop!" }'
 ```
 
 # Let's create a Function url
