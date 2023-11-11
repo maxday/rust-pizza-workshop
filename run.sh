@@ -4,4 +4,4 @@ if [ -z "${SECRET}" ]; then
     exit 1
 fi
 echo "Using secret: ${SECRET}"
-docker run -it --rm -v $(pwd):/app -e SECRET=${SECRET} maxday/rust-workshop
+docker run -it --rm -v $(pwd):/app -e SECRET=${SECRET} maxdayworkshop/rust-workshop
