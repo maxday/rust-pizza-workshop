@@ -40,8 +40,9 @@ cargo lambda deploy --iam-role $DEPLOY_ROLE_ARN --enable-function-url
 ```
 
 # Invoke your function using URL 
+⚠️ Replace <REPLACE_ME> with the function url genereted by the previous command
 ```bash
-curl -v 'REPLACE_WITH_YOUR_FUNCTION_URL' \
+curl -v '<REPLACE_ME>' \
 -H 'content-type: application/json' \
--d '{ "example": "test" }'`
+-d '{ "example": "test" }'
 ```

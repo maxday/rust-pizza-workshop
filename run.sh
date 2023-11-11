@@ -1,5 +1,5 @@
 SECRET=$1
-SUFFIX=$(tr -dc A-Za-z0-9 </dev/urandom | head -c 13 ; echo '')
+SUFFIX=$(tr -dc a-z </dev/urandom | head -c 20 ; echo '')
 if [ -z "${SECRET}" ]; then
     echo "Please provide a secret"
     exit 1
