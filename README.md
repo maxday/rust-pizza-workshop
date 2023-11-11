@@ -43,5 +43,5 @@ cargo lambda deploy --iam-role $DEPLOY_ROLE_ARN --enable-function-url
 ```bash
 curl -v '<REPLACE_ME>' \
 -H 'content-type: application/json' \
--d '{ "example": "test" }'
+-d '{ "message": "Hello from workshop!" }'
 ```
