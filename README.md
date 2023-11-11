@@ -1,8 +1,7 @@
 # Clone this repo
 ```bash
-git clone git@github.com:maxday/duke-rust-workshop.git && cd duke-rust-workshop
+git clone https://github.com/maxday/rust-pizza-workshop.git && cd rust-pizza-workshop
 ```
-(TODO replace with https when public)
 
 # Run the env
 ```bash
